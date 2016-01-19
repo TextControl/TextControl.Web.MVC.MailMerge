@@ -1,0 +1,717 @@
+﻿<!-- Clipboard group -->
+
+<div class="ribbon-group" id="ribbonGroupClipboard">
+	<div class="ribbon-group-content">
+		<!-- Paste button -->
+		<div class="ribbon-button ribbon-button-big" id="drpDnBtnPaste">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/paste.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"><!-- Paste --></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="ribbon-button-wrapper-small-stacked-buttons">
+			<!-- Cut button -->
+			<div class="ribbon-button ribbon-button-small" id="btnCut">
+				<div class="ribbon-button-small-image-container">
+					<img src="Icons/small_32bit/cut.png" class="ribbon-button-small-image" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Cut --></p>
+				</div>
+			</div>
+
+			<!-- Copy button -->
+			<div class="ribbon-button ribbon-button-small" id="btnCopy">
+				<div class="ribbon-button-small-image-container">
+					<img src="Icons/small_32bit/copy.png" class="ribbon-button-small-image" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Copy --></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ribbon group label -->
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Clipboard --></p>
+	</div>
+</div>
+
+<!-- Font group -->
+
+<div class="ribbon-group" id="ribbonGroupFont">
+	<div class="ribbon-group-content">
+		<div class="ribbon-group-content-row">
+			<div class="ribbon-group-button-group">
+				<select id="selectFont"></select>
+				<select id="selectFontSize"></select>
+			</div>
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnFontGrow">
+					<img src="Icons/small_32bit/fontsizeincrease.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="btnFontShrink">
+					<img src="Icons/small_32bit/fontsizedecrease.png" />
+				</div>
+			</div>
+		</div>
+		<div class="ribbon-group-content-row">
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnBold">
+					<img src="Icons/small_32bit/fontbold.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnItalic">
+					<img src="Icons/small_32bit/fontitalic.png" />
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnUnderlineStyles">
+					<img src="Icons/small_32bit/fontunderline.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnStrikethrough">
+					<img src="Icons/small_32bit/strikethrough.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnSubscript">
+					<img src="Icons/small_32bit/subscript.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnSuperscript">
+					<img src="Icons/small_32bit/superscript.png" />
+				</div>
+			</div>
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnHighlightColor">
+					<img src="Icons/small_32bit/highlightcolor.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="btnFontColor">
+					<img src="Icons/small_32bit/fontcolor.png" />
+				</div>
+			</div>
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnCharacterSettings">
+					<img src="Icons/small_32bit/charactersettings.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Font --></p>
+	</div>
+</div>
+
+<!-- Paragraph group -->
+
+<div class="ribbon-group" id="ribbonGroupParagraph">
+	<div class="ribbon-group-content">
+		<div class="ribbon-group-content-row">
+			<!-- List buttons -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnBulletList">
+					<img src="Icons/small_32bit/listbullet.png" />
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnNumberedList">
+					<img src="Icons/small_32bit/listdialog.png" />
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnStructuredList">
+					<img src="Icons/small_32bit/liststructured.png" />
+				</div>
+			</div>
+
+			<!-- Indent increase / decrease -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnIndentDecrease">
+					<img src="Icons/small_32bit/indentdecrease.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="btnIndentIncrease">
+					<img src="Icons/small_32bit/indentincrease.png" />
+				</div>
+			</div>
+
+			<!-- Text direction rtl / ltr -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnTextDirLTR">
+					<img src="Icons/small_32bit/textdirltr.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnTextDirRTL">
+					<img src="Icons/small_32bit/textdirrtl.png" />
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnTabs">
+					<img src="Icons/small_32bit/tabs.png" />
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnControlChars">
+					<img src="Icons/small_32bit/paragraphsign.png" />
+				</div>
+			</div>
+		</div>
+		<div class="ribbon-group-content-row">
+			<!-- Paragraph alignment -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignLeft">
+					<img src="Icons/small_32bit/alignleft.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignCenter">
+					<img src="Icons/small_32bit/aligncenter.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignRight">
+					<img src="Icons/small_32bit/alignright.png" />
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignJust">
+					<img src="Icons/small_32bit/alignjustify.png" />
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnLineSpacing">
+					<img src="Icons/small_32bit/linespacing.png" />
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnBorders">
+					<img src="Icons/small_32bit/borderbox.png" />
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnParSettings">
+					<img src="Icons/small_32bit/paragraphsettings.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Paragraph --></p>
+	</div>
+</div>
+
+<!-- Styles group -->
+
+<div class="ribbon-group" id="ribbonGroupStyles">
+	<div class="ribbon-group-content">
+		<div class="ribbon-button ribbon-button-big" id="drpDnBtnStyles">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/styledialog.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Styles --></p>
+	</div>
+</div>
+
+<!-- Editing group -->
+
+<div class="ribbon-group" id="ribbonGroupEditing">
+	<div class="ribbon-group-content">
+		<div class="ribbon-button-wrapper-small-stacked-buttons"
+			  style="float: left">
+			<!-- Undo button -->
+			<div class="ribbon-button ribbon-button-small" id="btnUndo">
+				<div class="ribbon-button-small-image-container">
+					<img src="Icons/small_32bit/undo.png" class="ribbon-button-small-image" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Undo --></p>
+				</div>
+			</div>
+
+			<!-- Redo button -->
+			<div class="ribbon-button ribbon-button-small" id="btnRedo">
+				<div class="ribbon-button-small-image-container">
+					<img src="Icons/small_32bit/redo.png" class="ribbon-button-small-image" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Redo --></p>
+				</div>
+			</div>
+		</div>
+		<div class="ribbon-button-wrapper-small-stacked-buttons"
+			  style="float: left">
+			<!-- Find button -->
+			<div class="ribbon-button ribbon-button-small" id="btnFind">
+				<div class="ribbon-button-small-image-container">
+					<img src="Icons/small_32bit/find.png" class="ribbon-button-small-image" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Find --></p>
+				</div>
+			</div>
+
+			<!-- Replace button -->
+			<div class="ribbon-button ribbon-button-small" id="btnReplace">
+				<div class="ribbon-button-small-image-container">
+					<img src="Icons/small_32bit/replace.png" class="ribbon-button-small-image" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Replace --></p>
+				</div>
+			</div>
+
+			<!-- Select All button -->
+			<div class="ribbon-button ribbon-button-small" id="btnSelectAll">
+				<div class="ribbon-button-small-image-container">
+					<img src="Icons/small_32bit/selectall.png" class="ribbon-button-small-image" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Select All --></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Editing --></p>
+	</div>
+</div>
+
+<!-------------------------------------------------------------------------------------------->
+<!-- DROPDOWN MENUS -->
+<!-------------------------------------------------------------------------------------------->
+<!-- Paste dropdown menu -->
+<ul id="pasteDropDown" class="dropDownMenu">
+	<!-- Server Paste -->
+	<li id="mnuItemServerPaste" class="ui-state-disabled">
+		<a href="#!">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/paste.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Server Paste --></h1>
+				<p><!-- Paste on the Server. --></p>
+			</div>
+		</a>
+	</li>
+	<!-- Client Paste -->
+	<li id="mnuItemClientPaste">
+		<a href="#!">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/clientpaste.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Client Paste --></h1>
+				<p><!-- Paste local clipboard content or drag and drop documents. --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Underline styles dropdown menu -->
+<ul id="ulStylesDropDown" class="dropDownMenu">
+	<li id="mnuItmULStyleSingle">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark"
+				  id="tglBtnULStyleSingle">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Single --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItmULStyleDoubled">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark"
+				  id="tglBtnULStyleDoubled">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Doubled --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItmULStyleSingleWO">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark"
+				  id="tglBtnULStyleSingleWO">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Single, only words --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItmULStyleDoubledWO">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark"
+				  id="tglBtnULStyleDoubledWO">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Doubled, only words --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Borders dropdown menu -->
+<ul id="bordersDropDown" class="dropDownMenu">
+	<li id="mnuItemBorderLeft">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderLeft">
+				<img src="Icons/small_32bit/borderleft.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Left --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderTop">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderTop">
+				<img src="Icons/small_32bit/bordertop.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Top --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderRight">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderRight">
+				<img src="Icons/small_32bit/borderright.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Right --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderBottom">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderBottom">
+				<img src="Icons/small_32bit/borderbottom.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Bottom --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderOutside">
+		<a href="#!" style="border-top: 1px solid lightgray">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderOutside">
+				<img src="Icons/small_32bit/borderbox.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Outside Borders --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderAll">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderAll">
+				<img src="Icons/small_32bit/borderall.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- All Borders --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderInsideHor">
+		<a href="#!" style="border-top: 1px solid lightgray">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderInsideHor">
+				<img src="Icons/small_32bit/borderinnerhor.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Inside horizontal Border --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderInsideVert">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderInsideVert">
+				<img src="Icons/small_32bit/borderinnervert.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Inside vertical Border --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Bulleted list dropdown menu -->
+<ul id="bulletListDropDown" class="dropDownMenu">
+	<li id="mnuItemBulletListDisc">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListDisc">
+				<img src="Icons/large_32bit/listdisc.png" />
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Disc --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListDash">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListDash">
+				<img src="Icons/large_32bit/listdash.png" />
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Dash --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListAsterisk">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListAsterisk">
+				<img src="Icons/large_32bit/listasterisk.png" />
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Asterisk --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListDiamond">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListDiamond">
+				<img src="Icons/large_32bit/listdiamond.png" />
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Diamond --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListArrow">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListArrow">
+				<img src="Icons/large_32bit/listarrow.png" />
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Arrow --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemListFormatBullet">
+		<a href="#!" style="border-top: 1px solid lightgray">
+			<div style="float: left; height: 16px; width: 16px; padding: 3px">
+				<img src="Icons/small_32bit/listbullet.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Format List… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Numbered list dropdown menu -->
+<ul id="numberedListDropDown" class="dropDownMenu">
+	<li id="mnuItemNumberedList_123">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_123">
+				<img src="Icons/large_32bit/list123.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- 1, 2, 3, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_abc">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_abc">
+				<img src="Icons/large_32bit/listabc.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- a, b, c, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_ABC">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_ABC">
+				<img src="Icons/large_32bit/listabccapital.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- A, B, C, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_III">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_III">
+				<img src="Icons/large_32bit/listromancapital.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- I, II, III, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_iii">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_iii">
+				<img src="Icons/large_32bit/listroman.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- i, ii, iii, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFormatListNumbered">
+		<a href="#!" style="border-top: 1px solid lightgray">
+			<div style="float: left; height: 16px; width: 16px; padding: 3px">
+				<img src="Icons/small_32bit/listdialog.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Format List… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Structured list dropdown menu -->
+<ul id="structuredListDropDown" class="dropDownMenu">
+	<li id="mnuItemStructuredList_123">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_123">
+				<img src="Icons/large_32bit/liststruct123.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- 1, 2, 3, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_abc">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_abc">
+				<img src="Icons/large_32bit/liststructabc.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- a, b, c, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_ABC">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_ABC">
+				<img src="Icons/large_32bit/liststructabccapital.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- A, B, C, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_III">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_III">
+				<img src="Icons/large_32bit/liststructromancapital.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- I, II, III, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_iii">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_iii">
+				<img src="Icons/large_32bit/liststructroman.png" />
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- i, ii, iii, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFormatListStructured">
+		<a href="#!" style="border-top: 1px solid lightgray">
+			<div style="float: left; height: 16px; width: 16px; padding: 3px">
+				<img src="Icons/small_32bit/liststructured.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Format List… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Line spacing dropdown menu -->
+<ul id="lineSpacingDropDown" class="dropDownMenu">
+	<li id="mnuItemLineSpacing_1_0">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_1_0">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.0 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_1_15">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_1_15">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.15 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_1_5">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_1_5">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.5 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_2_0">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_2_0">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 2.0 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_2_5">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_2_5">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 2.5 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_3_0">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_3_0">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 3.0 --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Style names drop down menu -->
+<ul id="stylesDropDown" class="dropDownMenu" style="width: 190px">
+	<!-- Formatting style names are added and removed in js -->
+	<!-- "Manage Styles" menu item -->
+	<li id="mnuItemManageStyles">
+		<a href="#!" style="border-top: 1px solid lightgray; overflow-x: hidden">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/styledialog.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Manage Styles --></h1>
+				<p><!-- Manage and edit the<br />document's styles. --></p>
+			</div>
+		</a>
+	</li>
+</ul>

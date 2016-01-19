@@ -1,0 +1,49 @@
+﻿@using TXTextControl.Web
+@using TXTextControl.Web.MVC
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.TXTextControl().TextControl().LoadXMLDatabase(
+    Server.MapPath("/App_Data/data/sample_db.xml")).LoadText(
+    Server.MapPath("/App_Data/data/template.tx"), 
+        StreamType.InternalUnicodeFormat).Render()
+
+<input id="Button1" onclick="Merge()" type="button" value="Merge" />
+
+<script>
+    // this function calls the controller method "Merge"
+    // by sending the current document
+    function Merge() {
+        // save the document
+        TXTextControl.saveDocument(TXTextControl.streamType.InternalUnicodeFormat,
+            function (e) {
+
+                var serviceURL = "/Home/Merge";
+
+                // call the controller
+                $.ajax({
+                    type: "POST",
+                    url: serviceURL,
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        BinaryDocument: e.data
+                    }),
+                    success: successFunc,
+                    error: errorFunc
+                });
+
+                // the controller sends back the merged document
+                // that is loaded into the editor
+                function successFunc(data, status) {
+                    TXTextControl.loadDocument(TXTextControl.streamType.InternalUnicodeFormat, data);
+                    alert("Document has been merged successfully.");
+                }
+
+                function errorFunc() {
+                    alert('Error');
+                }
+            });
+    }
+</script>

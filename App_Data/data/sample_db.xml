@@ -1,0 +1,18 @@
+<letters>
+  <letter>
+    <Company>Text Control, LLC</Company>
+    <FirstName>Joe</FirstName>
+    <LastName>Jackson</LastName>
+    <AddressLine>200 Text Control Way</AddressLine>
+    <PostalCode>28226</PostalCode>
+    <City>Charlotte, NC</City>
+  </letter>
+  <letter>
+    <Company>Software Makers</Company>
+    <FirstName>Jack</FirstName>
+    <LastName>Johnson</LastName>
+    <AddressLine>100 Software Makers Street</AddressLine>
+    <PostalCode>37782</PostalCode>
+    <City>Miami, FL</City>
+  </letter>
+</letters>

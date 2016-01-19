@@ -1,0 +1,264 @@
+﻿<!-- "Zoom" group -->
+
+<div class="ribbon-group" id="ribbonGroupZoom">
+	<div class="ribbon-group-content">
+		<!-- Zoom button -->
+		<div class="ribbon-button ribbon-button-big" id="drpDnBtnZoom">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/zoom.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"><!-- Zoom<br /> --></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+
+		<!-- 100% button-->
+
+		<div class="ribbon-button ribbon-button-big" id="btnZoom100">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/zoom100.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- 100% --></p>
+			</div>
+		</div>
+
+		<!-- Page Width button -->
+
+		<div class="ribbon-button ribbon-button-big" id="btnZoomPageWidth">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/zoompagewidth.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Page Width --></p>
+			</div>
+		</div>
+
+		<!-- Page Height button -->
+
+		<div class="ribbon-button ribbon-button-big" id="btnZoomPageHeight">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/zoompageheight.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Page Height --></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ribbon group label -->
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Zoom --></p>
+	</div>
+</div>
+
+<!-- "Show" group -->
+
+<div class="ribbon-group" id="ribbonGroupShow">
+	<div class="ribbon-group-content">
+		<!-- Ruler bar check boxes -->
+		<div class="ribbon-button-wrapper-small-stacked-buttons">
+			<!-- "Horizontal ruler" -->
+			<div class="ribbon-checkbox">
+				<div class="ribbon-checkbox-input-element-container">
+					<input type="checkbox" id="chkRulerHor" checked="checked" onfocus="this.blur();" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<label class="ribbon-button-label"
+							 for="chkRulerHor"
+							 onfocus="this.blur();">
+						<!-- Horizontal Ruler -->
+					</label>
+				</div>
+			</div>
+			<!-- "Vertical ruler" -->
+			<div class="ribbon-checkbox">
+				<div class="ribbon-checkbox-input-element-container">
+					<input type="checkbox" id="chkRulerVert" checked="checked" onfocus="this.blur();" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<label class="ribbon-button-label"
+							 for="chkRulerVert"
+							 onfocus="this.blur();">
+						<!-- Vertical Ruler -->
+					</label>
+				</div>
+			</div>
+			<!-- "Status bar" -->
+			<div class="ribbon-checkbox">
+				<div class="ribbon-checkbox-input-element-container">
+					<input type="checkbox" id="chkStatusBar" checked="checked" onfocus="this.blur();" />
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<label class="ribbon-button-label"
+							 for="chkStatusBar"
+							 onfocus="this.blur();">
+						<!-- Status Bar -->
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ribbon group label -->
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Show --></p>
+	</div>
+</div>
+
+<!-- "Proofing" group -->
+
+<div class="ribbon-group" id="ribbonGroupProofing">
+	<div class="ribbon-group-content">
+		<!-- "Spelling" button -->
+		<div class="ribbon-button ribbon-button-big ui-state-disabled"
+			  id="btnSpelling"
+			  style="display: none">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/spelling.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Spelling --></p>
+			</div>
+		</div>
+		<!-- "Enable spell check" button -->
+		<div class="ribbon-button ribbon-button-big ui-state-disabled"
+			  id="tglBtnEnableSpellCheck"
+			  style="display: none">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/spellasyoutype.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Enable Spell<br />Checking --></p>
+			</div>
+		</div>
+		<!-- "Enable Language Detection" button -->
+		<div class="ribbon-button ribbon-button-big ui-state-disabled"
+			  id="tglBtnEnableLangDetect"
+			  style="display: none">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/languagedetection.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Enable Language<br />Detection --></p>
+			</div>
+		</div>
+		<!-- "Load Dictionary" button -->
+		<div class="ribbon-button ribbon-button-big ui-state-disabled"
+			  id="btnLoadDictionary"
+			  style="display: none">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/loaddictionary.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Load<br />Dictionary --></p>
+			</div>
+		</div>
+		<!-- "Enable Hyphenation" button -->
+		<div class="ribbon-button ribbon-button-big ui-state-disabled"
+			  id="tglBtnEnableHyphenation"
+			  style="display: none">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/hyphenation.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Enable<br />Hyphenation --></p>
+			</div>
+		</div>
+		<!-- "Set Language" button -->
+		<div class="ribbon-button ribbon-button-big" id="btnSetLanguage">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/setlanguage.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Set<br />Language --></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ribbon group label -->
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Proofing --></p>
+	</div>
+</div>
+
+<!-------------------------------------------------------------------------------------------->
+<!-- DROPDOWN MENUS -->
+<!-------------------------------------------------------------------------------------------->
+<!-- Zoom dropdown menu -->
+
+<ul id="zoomDropDown" class="dropDownMenu">
+	<li id="mnuItemZoom_25">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnZoom_25">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p>25%</p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemZoom_50">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnZoom_50">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p>50%</p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemZoom_75">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnZoom_75">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p>75%</p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemZoom_100">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark ribbon-button-selected" id="tglBtnZoom_100">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p>100%</p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemZoom_150">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnZoom_150">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p>150%</p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemZoom_200">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnZoom_200">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p>200%</p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemZoom_400">
+		<a href="#!">
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnZoom_400">
+				<img src="Icons/small_32bit/checkmark.png" />
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p>400%</p>
+			</div>
+		</a>
+	</li>
+</ul>

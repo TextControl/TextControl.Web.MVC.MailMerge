@@ -1,0 +1,203 @@
+﻿<!-- "Page setup" group -->
+<div class="ribbon-group" id="ribbonGroupPageSetup">
+	<div class="ribbon-group-content">
+		<!-- Page layout button -->
+		<div class="ribbon-button ribbon-button-big" id="btnPageSettings">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/pagedialog.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label"><!-- Margins<br />&amp; Paper --></p>
+			</div>
+		</div>
+		<!-- Orientation Button  -->
+		<div class="ribbon-button ribbon-button-big" id="drpDnBtnPageOrientation">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/pageorientation.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"><!-- Orientation<br /> --></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+		<!-- Columns Button  -->
+		<div class="ribbon-button ribbon-button-big" id="drpDnBtnPageColumns">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/pagecolumnstwo.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"><!-- Columns<br /> --></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+		<!-- Breaks Button  -->
+		<div class="ribbon-button ribbon-button-big" id="drpDnBtnPageBreaks">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/pagebreak.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"><!-- Breaks<br /> --></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+		<!-- Page borders Button  -->
+		<div class="ribbon-button ribbon-button-big" id="btnsPageBorders">
+			<div class="ribbon-button-big-image-container">
+				<img src="Icons/large_32bit/pageframedialog.png" class="ribbon-button-big-image" />
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<!-- Page<br />Borders -->
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ribbon group label -->
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Page Setup --></p>
+	</div>
+</div>
+
+<!-------------------------------------------------------------------------------------------->
+<!-- DROPDOWN MENUS -->
+<!-------------------------------------------------------------------------------------------->
+<!-- Orientation dropdown menu -->
+<ul id="pageOrientationDropDown" class="dropDownMenu">
+	<li id="mnuItemPortrait">
+		<a href="#!">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/pageorientationportrait.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Portrait --></h1>
+				<p><!-- Set page orientation<br />to “Portrait”. --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLandscape">
+		<a href="#!">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/pageorientationlandscape.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Landscape --></h1>
+				<p><!-- Set page orientation<br />to “Landscape”. --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Columns dropdown menu -->
+<ul id="pageColumnsDropDown" class="dropDownMenu">
+	<li id="mnuItemOneColumn">
+		<a href="#!">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/pagecolumnsone.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- One --></h1>
+				<p><!-- One column. --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemTwoColumns">
+		<a href="#!">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/pagecolumnstwo.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Two --></h1>
+				<p><!-- Two columns. --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemThreeColumns">
+		<a href="#!">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/pagecolumnsthree.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Three --></h1>
+				<p><!-- Three columns. --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemMoreColumns">
+		<a href="#!" style="border-top: 1px solid lightgray">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="Icons/large_32bit/columnsdialog.png" />
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- More Columns… --></h1>
+				<p><!-- Open the page setup dialog<br />and show the “Columns” tab. --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Breaks dropdown menu -->
+<ul id="pageBreaksDropDown" class="dropDownMenu">
+	<li id="mnuItemPageBreakPage">
+		<a href="#!">
+			<div class="menu-item-category-header">
+				<h1><!-- Page Breaks --></h1>
+			</div>
+			<div class="large-menu-item-image-container">
+				<img src="Icons/large_32bit/pagebreak.png" />
+			</div>
+			<div class="large-menu-item-caption-container">
+				<p><!-- Page --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemPageBreakColumn">
+		<a href="#!">
+			<div class="large-menu-item-image-container">
+				<img src="Icons/large_32bit/insertpagecolumnbreak.png" />
+			</div>
+			<div class="large-menu-item-caption-container">
+				<p><!-- Column --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemPageBreakTextWrap">
+		<a href="#!">
+			<div class="large-menu-item-image-container">
+				<img src="Icons/large_32bit/textwrappingbreak.png" />
+			</div>
+			<div class="large-menu-item-caption-container">
+				<p><!-- Text Wrapping --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemSectionBreakPage">
+		<a href="#!">
+			<div class="menu-item-category-header">
+				<h1><!-- Section Breaks --></h1>
+			</div>
+			<div class="large-menu-item-image-container">
+				<img src="Icons/large_32bit/insertsectionbreakpage.png" />
+			</div>
+			<div class="large-menu-item-caption-container">
+				<p><!-- Next Page --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemSectionBreakCont">
+		<a href="#!">
+			<div class="large-menu-item-image-container">
+				<img src="Icons/large_32bit/insertsectionbreakparagraph.png" />
+			</div>
+			<div class="large-menu-item-caption-container">
+				<p><!-- Continuous --></p>
+			</div>
+		</a>
+	</li>
+</ul>
